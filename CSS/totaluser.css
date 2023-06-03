@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: beige;
+}
+
+.logo {
+    margin-left: 90px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.nav {
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: uppercase;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff0069;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.userslist{
+    padding: 4px;
+    height: 88vh;
+    width: 69%;
+    margin-top: 11vh;
+    background-color: #d1dbdb;
+    margin-top: 11vh;
+    overflow-y: auto;
+    position: fixed;
+    border-radius: 5px;
+}
+
+.userslist h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.userslists {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .userslists td, .userslists th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .userslists tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .userslists tr:hover {background-color: #ddd;}
+  
+  .userslists th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+
+  #delbtn{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+
+.updateuser{
+    width: 29.5%;
+    height: 89vh;
+    right: 0;
+    bottom: 0;
+    background-color: #D4D4D4;
+    margin-left: 70%;
+    margin-top: 11vh;
+    padding: 4px;
+}
+
+.updateuser h1{
+    margin-top: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.updateuser form {
+	display: flex;
+	flex-direction: column;
+}
+
+.updateuser label {
+    margin-left: 20px;
+	margin-top: 10px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.updateuser input[type=text], input[type=email]{
+    margin-left: 20px;
+    width: 390px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.updateuser .button {
+    width: 250px;
+    align-self: center;
+    margin-top: 9px;
+	padding: 10px;
+	background-color: #222831;
+	color: #fff;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.updateuser .button:hover {
+	background-color: #ff0069;
+}
+

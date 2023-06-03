@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: beige;
+}
+
+.logo {
+    margin-left: 90px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.nav {
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: uppercase;
+}
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff0069;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.blogs{
+    padding: 8px;
+    height: 89vh;
+    width: 100%;
+    background-color: #d1dbdb;
+    margin-top: 11vh;
+    margin-left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.blogs h1{
+    text-align: center;
+    text-transform:uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+
+
+.bloglist {
+    margin-top: 8vh;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  .bloglist td, .bloglist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .bloglist tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .bloglist tr:hover {background-color: #ddd;}
+  
+  .bloglist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+
+  #delbtn{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
